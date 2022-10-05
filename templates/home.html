@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>hi {{name}}</title>
-</head>
-<body>
-<h2> hello {{name}}, go gome</h2>
+{% extends 'base.html' %}
 
-
-</body>
-</html>
+{% block title %} its home{% endblock %}
+{% block content %}
+<h2>my first home</h2>
+<h2>my name {{ name }}</h2>
+{% endblock %}
